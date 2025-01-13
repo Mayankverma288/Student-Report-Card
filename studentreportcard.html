@@ -1,0 +1,54 @@
+<style>
+th{
+    background-color:skyblue;
+}
+div{
+     background-color:lightblue;
+	 text-align:center;
+}
+</style>
+<html>
+<div>
+<h1>HARYANA PUBLIC SCHOOL</h1>
+<h4>STUDENT REPORT CARD</h4>
+</div>
+</html>
+<script>
+ var Name,Math,Hindi,Eng,Sci,To,Per,Gr;
+ 
+ Name=prompt("Enter the stu name");
+ Math=eval(prompt("Enter the Math num"));
+ Hindi=eval(prompt("Enter the Hindi num"));
+ Eng=eval(prompt("Enter the Eng num"));
+ Sci=eval(prompt("Enter the Sci num"));
+ To=Math+Hindi+Eng+Sci;
+ Per=To/4;
+ 
+ if(Per>=70)
+  {
+    Gr="A";
+  }
+ 
+ else if(Per>=60)
+  {
+    Gr="B";
+  } 
+ else
+ {
+    Gr="C";
+ }
+ document.write("<table>");
+ document.write("<tr><th>Subject</th><th>Score</th></tr>");
+ document.write("Name\t\t=\t\t"+Name+"<br>");
+ document.write("Math\t\t=\t\t"+Math+"<br>");
+ document.write("Hindi\t\t=\t\t"+Hindi+"<br>");
+ document.write("Eng\t\t=\t\t"+Eng+"<br>");
+ document.write("Sci\t\t=\t\t"+Sci+"<br>"); 
+ document.write("Total\t\t=\t\t"+To+"<br>");
+ document.write("Per\t\t=\t\t"+Per+"<br>");
+ document.write("Grade\t\t=\t\t<font color=red>"+Gr+"</font><br>");
+ document.write("</table>");
+    
+ 
+ 
+ </script>
